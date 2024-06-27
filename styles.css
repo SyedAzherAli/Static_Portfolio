@@ -1,0 +1,167 @@
+body {
+    /* background-image: url('mixkit-starry-night-sky-over-hills-and-water-85-original.png'); */
+    /* background-image: var(--background-image); */
+    background-color: var(--backgound-color);
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    /* padding: 0; */
+    /* background-color: #f4f4f4; */
+    scroll-behavior: smooth;
+    
+}
+:root {
+
+    --background-image: url('components/mixkit-starry-night-sky-over-hills-and-water-85-original.png');
+    --backgound-color:#74b9ff;
+}
+ 
+
+
+
+header {
+    /* background-image: var(--background-image); */
+    /* background-color: #333; */
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    top: 0;
+    z-index: 1000;
+    font-weight: bold;
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.header-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-shadow: #000000;
+    text-shadow: 50px;
+    }
+    
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #ff6347;
+}
+
+main {
+    padding-top: 0px;
+   
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.6s, transform 0.6s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#contact {
+    background-color: #dfe6e9 ;
+    /* background: url('components/depositphotos_264157896-stock-photo-abstract-digital-background-network-connection.webp') no-repeat center center; */
+    background-size: cover;
+    color: #000000;
+}
+#about {
+    /* background: url('https://via.placeholder.com/1500') no-repeat center center; */
+    background-color: #dfe6e9;
+    background-size: cover;
+    color: #000000;
+    /* p {
+        color: rgb(255, 255, 255);
+    } */
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+ 
+#experience {
+    background: url('experience-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #000000;
+}
+
+#skills {
+    background: url('skills-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #000000;
+}
+
+#education {
+    background: url('education-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #000000;
+}
+
+#projects {
+    background: url('projects-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #000000;
+}
+
+#contact a {
+    color: #3d9cfa;
+    text-decoration: none;    
+}
+
+#contact a:hover{
+    text-decoration: underline;
+}
+
+footer {
+    /* background-image: var(--background-image); */
+    /* background-color: #333; */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+    }
+}
